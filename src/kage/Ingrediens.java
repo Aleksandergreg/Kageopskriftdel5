@@ -57,7 +57,7 @@ public class Ingrediens {
         return kcalPr100g / 100 * beregnVægt();
     }
     public double beregnkJ(){
-        return beregnVægt()*4.2;
+        return beregnKcal()*4.2;
     }
 }
 
