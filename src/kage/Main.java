@@ -48,5 +48,6 @@ public class Main {
         System.out.printf(ANSI_RED + "Total kcal: %.2f kcal" + '\n', pandekager.beregnTotalKcal());
         System.out.printf("Gennemsnit kcal pr. ingrediens: %.2f kcal" + '\n' ,pandekager.beregnGennemsnitKcal());
         System.out.printf("Gennemsnit kJ pr. ingrediens: %.2f kJ", pandekager.beregnGennemsnitKJ());
+        System.out.println("Hvordan virker GITHUB");
     }
 }
