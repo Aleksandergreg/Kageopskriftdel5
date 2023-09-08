@@ -57,6 +57,14 @@ public class Opskrift {
         }
         return totalKcal;
     }
+    //find totalkJ
+    public double beregnTotalKj(){
+        double totalKj = 0;
+        for (Ingrediens ingrediens :ingredienser){
+            totalKj += ingrediens.beregnkJ();
+        }
+        return totalKj;
+    }
 
     //Find gennemsnitKcal
     public double beregnGennemsnitKcal() {
@@ -70,8 +78,12 @@ public class Opskrift {
         // Gange med faktor 4.2 for omregning fra kcal til KJ
         gennemsnitKJ = beregnGennemsnitKcal() * 4.2;
         return gennemsnitKJ;
-    }
-}
+
+
+            }
+        }
+
+
 
 
 

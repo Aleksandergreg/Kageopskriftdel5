@@ -56,6 +56,9 @@ public class Ingrediens {
         // Vi dividerer med 100 for at finde ud af hvor mange kcal der er pr g.
         return kcalPr100g / 100 * beregnVægt();
     }
+    public double beregnkJ(){
+        return beregnVægt()*4.2;
+    }
 }
 
 

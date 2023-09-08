@@ -34,6 +34,7 @@ public class Main {
         for (Ingrediens ingrediens : pandekager.getIngredienser()) {
             System.out.printf(ANSI_CYAN + "|%.0f "+ ANSI_GREEN +"|%s" +ANSI_PURPLE + "|%s|%n" + ANSI_RESET, ingrediens.beregnMængde(),
                     ingrediens.getEnhed(), ingrediens.getType());
+
         }
 
         System.out.println("----------------------------------------");
@@ -46,8 +47,9 @@ public class Main {
 
         //Print ingrediensers samlede Kcal samt gennemsnit
         System.out.printf(ANSI_RED + "Total kcal: %.2f kcal" + '\n', pandekager.beregnTotalKcal());
+        System.out.printf("Total kJ: %.2f kJ" + '\n', pandekager.beregnTotalKj());
         System.out.printf("Gennemsnit kcal pr. ingrediens: %.2f kcal" + '\n' ,pandekager.beregnGennemsnitKcal());
         System.out.printf("Gennemsnit kJ pr. ingrediens: %.2f kJ", pandekager.beregnGennemsnitKJ());
-        System.out.println("Hvordan virker GITHUB");
+
     }
 }
